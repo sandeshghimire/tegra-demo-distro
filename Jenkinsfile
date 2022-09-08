@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('clone') {
       steps {
-        sh 'ls -lah'  
+        sh '. ./setup-env  --machine jetson-xavier-nx-devkit --distro tegrademo  build-testdistro'  
       }
     }
 
